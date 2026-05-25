@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <!-- box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="#" class="logo">Brennohz</a>
+
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">Sobre</a>
+        <a href="#services">Habilidades</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contato</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- home section design -->
+      <section class="home" id="home">
+      <div class="home-content">
+        <h3>Olá, meu nome é</h3>
+        <h1>Brenno</h1>
+        <h3>
+          e eu sou um <span>Desenvolvedor <br /> </span>
+          <span class="multiple-text"></span>
+        </h3>
+        <p>
+          Olá! Eu sou Brenno Oliveira e atuo tanto no desenvolvimento front-end
+          quanto no back-end. Tenho paixão por criar experiências incríveis para
+          os usuários, além de garantir que toda a parte de trás funcione
+          perfeitamente. Estou sempre em busca de novos desafios na área de
+          tecnologia!
+        </p>
+
+        <div class="social-media">
+          <a href="https://www.linkedin.com/in/brenno-oliveira" aria-label="LinkedIn" target="_blank"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/Brennohz" aria-label="GitHub" target="_blank"><i class="bx bxl-github"></i></a>
+          <a href="https://www.youtube.com/@Brennohz" aria-label="YouTube" target="_blank"><i class="bx bxl-youtube"></i></a>
+        </div>
+
+        <div>
+          <a href="Curriculo/Curriculo - Brenno Oliveira.pdf" download="Curriculo - Brenno Oliveira.pdf" class="btn">Download CV</a>
+        </div>
+      </div>
+
+      <div class="home-img">
+        <img src="Images/home.jpg" />
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="Images/sobre.jpg" alt="" />
+      </div>
+
+      <div class="about-content">
+        <h2 class="heading">Sobre <span>Mim</span></h2>
+        <h3>Meus Interesses</h3>
+        <p>
+          Sou uma pessoa apaixonada por diversos universos criativos! Filmes e
+          séries sempre me inspiram, enquanto animes e mangás me transportam
+          para novas realidades. Adoro mergulhar em bons livros e explorar
+          mundos incríveis através dos jogos. A fotografia é outra das minhas
+          paixões, permitindo-me capturar momentos e contar histórias visuais.
+          E, claro, a programação é uma parte fundamental da minha vida, onde
+          posso transformar ideias em realidade. Cada uma dessas atividades me
+          enriquece e me motiva a continuar explorando e aprendendo!
+        </p>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <h2 class="heading">Habilidades & <span>Tecnologias</span></h2>
+
+      <div class="services-container">
+        <article class="services-box">
+          <i class="bx bx-code-alt"></i>
+          <h3>Front-end</h3>
+          <p>
+            Desenvolvimento de interfaces modernas e responsivas. Experiência na criação de aplicações web utilizando HTML, CSS, JavaScript e Node.js, focando em performance e usabilidade.
+          </p>
+        </article>
+
+        <article class="services-box">
+          <i class="bx bx-server"></i>
+          <h3>Back-end</h3>
+          <p>
+            Construção de sistemas robustos e lógicas complexas. Proficiência no desenvolvimento utilizando linguagens como C, C#, C++ e Python, garantindo eficiência e segurança.
+          </p>
+        </article>
+
+        <article class="services-box">
+          <i class="bx bx-joystick"></i>
+          <h3>Game Developer</h3>
+          <p>
+            Desenvolvimento completo de jogos criativos e altamente polidos. Domino tanto a programação de mecânicas complexas em C# e Luau, quanto a direção visual e artística, unindo lógica e design para criar experiências verdadeiramente imersivas.
+          </p>
+        </article>
+
+        <article class="services-box">
+          <i class="bx bx-microchip"></i>
+          <h3>Arduino</h3>
+          <p>
+            Desenvolvimento e programação de sistemas embarcados. Experiência na criação de projetos de automação, robótica e prototipagem eletrônica com Arduino, programando diretamente em C.
+          </p>
+        </article>
+
+        <article class="services-box">
+          <i class="bx bx-hdd"></i>
+          <h3>Hardware</h3>
+          <p>
+            Conhecimento prático em montagem, manutenção e arquitetura de computadores, focando na integração fluida entre software e componentes físicos.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">Últimos <span>Projetos</span></h2>
+
+      <div class="portfolio-container">
+        <!-- Projeto 1 -->
+        <article class="portfolio-box">
+          <img src="Images/Icone.png" alt="Guardian Project" style="object-fit: contain; background-color: #e2e8f0; padding: 2rem;" />
+          <div class="portfolio-layer">
+            <h4>Guardian</h4>
+            <p>Plataforma avançada de monitoramento.</p>
+            <button class="open-modal-btn" 
+              data-title="Guardian Project" 
+              data-desc="O Guardian é uma landing page moderna, elegante e responsiva desenvolvida para apresentar um aplicativo assistente inteligente de suporte técnico. Ele foi projetado para ajudar usuários a diagnosticar e solucionar problemas de hardware e software em seus computadores (desktops e laptops), de forma rápida, eficiente e acessível." 
+              data-tags="HTML, CSS, JavaScript" 
+              data-github="https://github.com/Brennohz/Guardian_Project" 
+              data-live="https://guardian-project-brennohz.web.app/"
+              data-img="Images/Icone.png"
+              data-img-type="icon">
+              <i class="bx bx-zoom-in"></i> Ver Detalhes
+            </button>
+          </div>
+        </article>
+
+        <!-- Projeto 2 -->
+        <article class="portfolio-box">
+          <img src="https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Imagem Projeto 2" />
+          <div class="portfolio-layer">
+            <h4>Jogo C#</h4>
+            <p>Meu primeiro jogo complexo.</p>
+            <button class="open-modal-btn" 
+              data-title="Jogo Aventura 2D" 
+              data-desc="Um jogo de aventura 2D com mecânicas avançadas de física, inteligência artificial para inimigos e um sistema de inventário. Desenvolvido com scripts em C#." 
+              data-tags="C#, Unity, Game Design" 
+              data-github="https://github.com/Brennohz" 
+              data-live=""
+              data-img="https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+              <i class="bx bx-zoom-in"></i> Ver Detalhes
+            </button>
+          </div>
+        </article>
+
+        <!-- Projeto 3 -->
+        <article class="portfolio-box">
+          <img src="https://images.pexels.com/photos/163065/mobile-phone-android-apps-phone-163065.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Imagem Projeto 3" />
+          <div class="portfolio-layer">
+            <h4>App Backend</h4>
+            <p>API construída com Python.</p>
+            <button class="open-modal-btn" 
+              data-title="API de Gerenciamento" 
+              data-desc="Uma API robusta para gerenciamento de dados criada em Python. Possui autenticação, rotas seguras e integração com banco de dados, perfeita para alimentar sistemas complexos." 
+              data-tags="Python, Flask, SQL" 
+              data-github="https://github.com/Brennohz" 
+              data-live=""
+              data-img="https://images.pexels.com/photos/163065/mobile-phone-android-apps-phone-163065.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+              <i class="bx bx-zoom-in"></i> Ver Detalhes
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="heading">Contate-<span>Me!</span></h2>
+
+      <div class="contact-info">
+        <p>Sinta-se à vontade para me mandar uma mensagem direta em minhas redes ou usar o formulário abaixo:</p>
+        <div class="contact-socials">
+          <a href="https://www.linkedin.com/in/brenno-oliveira" target="_blank" class="btn contact-btn"><i class="bx bxl-linkedin"></i> Conectar no LinkedIn</a>
+          <a href="https://github.com/Brennohz" target="_blank" class="btn btn-outline contact-btn"><i class="bx bxl-github"></i> Ver meu GitHub</a>
+        </div>
+        <div class="contact-separator">
+          <span>OU</span>
+        </div>
+      </div>
+
+      <form id="contact-form">
+        <div class="input-box">
+          <input type="text" id="name" name="name" placeholder="Nome Completo" required />
+          <input type="email" id="email" name="email" placeholder="Email" required />
+        </div>
+        <div class="input-box">
+          <input type="tel" id="phone" name="phone" placeholder="Telefone" />
+          <input type="text" id="subject" name="subject" placeholder="Assunto" required />
+        </div>
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="Sua Mensagem"
+          required
+        ></textarea>
+        <input type="submit" value="Enviar Mensagem" class="btn" id="submit-btn" />
+        <p id="form-status" style="display: none; margin-top: 1.5rem; font-size: 1.6rem; font-weight: bold;"></p>
+      </form>
+    </section>
+
+      <!-- Modal para Projetos -->
+      <div id="project-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <div class="modal-img-container">
+            <img id="modal-img" src="" alt="Imagem do Projeto" />
+          </div>
+          <div class="modal-info">
+            <h3 id="modal-title">Título do Projeto</h3>
+            <p id="modal-desc">Descrição do projeto...</p>
+            <div id="modal-tags" class="modal-tags">
+              <!-- Tags dinâmicas -->
+            </div>
+            <div class="modal-buttons">
+              <a href="#" id="modal-github" class="btn" target="_blank"><i class="bx bxl-github"></i> GitHub</a>
+              <a href="#" id="modal-live" class="btn" target="_blank" style="background: transparent; border: .2rem solid var(--main-color); color: var(--main-color); margin-left: 1rem;"><i class="bx bx-link-external"></i> Ver Site</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2024 by Brenno Oliveira</p>
+      </div>
+
+      <div class="footer-iconTop">
+        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- custom js -->
+    <script src="script.js"></script>
+  </body>
+</html>
