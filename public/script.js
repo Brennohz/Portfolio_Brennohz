@@ -172,15 +172,15 @@ if (contactForm) {
 
             if (response.ok) {
                 formStatus.textContent = 'Mensagem enviada com sucesso! Entrarei em contato em breve.';
-                formStatus.style.color = '#00ff00'; // Green
+                formStatus.style.color = 'var(--main-color)'; // Cor principal do tema
                 contactForm.reset();
             } else {
                 formStatus.textContent = result.error || 'Erro ao enviar a mensagem. Tente novamente.';
-                formStatus.style.color = '#ff0000'; // Red
+                formStatus.style.color = '#ff6b6b'; // Vermelho suave
             }
         } catch (error) {
             formStatus.textContent = 'Erro de rede. Verifique sua conexão e tente novamente.';
-            formStatus.style.color = '#ff0000'; // Red
+            formStatus.style.color = '#ff6b6b'; // Vermelho suave
         } finally {
             formStatus.style.display = 'block';
             submitBtn.value = 'Enviar Mensagem';
