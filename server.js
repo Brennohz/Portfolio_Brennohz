@@ -15,17 +15,19 @@ app.use(express.urlencoded({ extended: true }));
 // Serve static files from the 'public' directory
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Configure Nodemailer transporter
-const transporter = nodemailer.createTransport({
-    service: 'gmail', // Mude para seu provedor de email, se necessário
-    auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS
-    }
-});
-
 // Endpoint para envio de email
 app.post('/send-email', async (req, res) => {
+    console.log("Verificando Variáveis de Ambiente no Vercel -> EMAIL_USER existe?", !!process.env.EMAIL_USER, "| EMAIL_PASS existe?", !!process.env.EMAIL_PASS);
+
+    // Configurar Nodemailer aqui dentro para garantir que pegue o process.env no momento da requisição
+    const transporter = nodemailer.createTransport({
+        service: 'gmail',
+        auth: {
+            user: process.env.EMAIL_USER,
+            pass: process.env.EMAIL_PASS
+        }
+    });
+
     const { name, email, phone, subject, message } = req.body;
 
     if (!name || !email || !message) {
