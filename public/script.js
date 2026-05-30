@@ -110,7 +110,12 @@ openModalBtns.forEach(btn => {
         }
         
         // Setup buttons
-        modalGithub.href = github;
+        if(github) {
+            modalGithub.style.display = 'inline-flex';
+            modalGithub.href = github;
+        } else {
+            modalGithub.style.display = 'none';
+        }
         
         if(live) {
             modalLive.style.display = 'inline-flex';
