@@ -164,7 +164,10 @@ span {
 }
 
 .btn {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
     padding: 1rem 2.8rem;
     background: var(--main-color);
     border-radius: 4rem;
