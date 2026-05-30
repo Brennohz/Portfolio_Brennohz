@@ -689,6 +689,7 @@ span {
 
     .home-img img {
         width: 70vw;
+        height: 70vw;
         margin-top: 4rem;
     }
 
@@ -698,6 +699,7 @@ span {
 
     .about-img img {
         width: 70vw;
+        height: 70vw;
         margin-top: 4rem;
     }
 
@@ -733,10 +735,12 @@ span {
 @media (max-width: 365px) {
     .home-img img {
         width: 90vw;
+        height: 90vw;
     }
 
     .about-img img {
         width: 90vw;
+        height: 90vw;
     }
 
     .footer {
@@ -746,5 +750,18 @@ span {
     .footer p {
         text-align: center;
         margin-top: 2rem;
+    }
+}
+
+/* Telas Ultrawide e 4K */
+@media (min-width: 2560px) {
+    html {
+        font-size: 85%; /* Aumenta o tamanho base para telas > 2.5K */
+    }
+}
+
+@media (min-width: 3800px) {
+    html {
+        font-size: 120%; /* Aumenta significativamente para 4K */
     }
 }

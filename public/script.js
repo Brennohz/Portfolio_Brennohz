@@ -90,7 +90,7 @@ openModalBtns.forEach(btn => {
         // Ajuste especial se a imagem for um ícone
         if (imgType === 'icon') {
             modalImg.style.objectFit = 'contain';
-            modalImg.style.backgroundColor = '#e2e8f0';
+            modalImg.style.backgroundColor = 'transparent';
             modalImg.style.padding = '2rem';
         } else {
             modalImg.style.objectFit = 'cover';
